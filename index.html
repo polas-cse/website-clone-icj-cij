@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ICJ Website Viewer</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f5f5f5;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .header {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        
+        .header h1 {
+            color: #003366;
+            margin-bottom: 10px;
+        }
+        
+        .visit-btn {
+            display: inline-block;
+            background: #003366;
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 18px;
+            transition: background 0.3s;
+        }
+        
+        .visit-btn:hover {
+            background: #004488;
+        }
+        
+        .info-box {
+            background: #e7f3ff;
+            border-left: 4px solid #003366;
+            padding: 15px;
+            margin-top: 20px;
+            border-radius: 4px;
+        }
+        
+        .warning {
+            background: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 15px;
+            margin-top: 20px;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        // Redirect immediately to the local proxy so the target site loads on page load.
+        // Uses 'transparent=1' to hide the proxy banner (allowed because you confirmed permission).
+        // Use replace() to avoid creating an extra history entry.
+        window.location.replace('proxy.php?transparent=1');
+    </script>
+
+    <div class="container">
+        <div class="header">
+            <h1>🏛️ International Court of Justice</h1>
+            <p style="color: #666; margin-bottom: 20px;">Official Website Portal</p>
+            
+            <a href="https://www.icj-cij.org" target="_blank" class="visit-btn">
+                Visit ICJ Official Website →
+            </a>
+        </div>
+        
+        <div class="info-box">
+            <h3>ℹ️ Technical Note</h3>
+            <p>Due to security policies (X-Frame-Options), the ICJ website cannot be embedded directly in an iframe. Click the button above to visit the official website in a new tab.</p>
+        </div>
+        
+        <div class="warning">
+            <h3>⚠️ বাংলায়</h3>
+            <p>ICJ ওয়েবসাইট নিরাপত্তার কারণে iframe এ লোড হয় না। উপরের বাটনে ক্লিক করে সরাসরি তাদের অফিশিয়াল সাইট ভিজিট করুন।</p>
+        </div>
+    </div>
+</body>
+</html>
